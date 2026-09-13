@@ -1,0 +1,808 @@
+/* ==================================
+   RESET
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================
+   NAVIGATION
+================================== */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    padding: 15px 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+
+    background: rgba(5, 5, 5, 0.85);
+
+    border-bottom: 1px solid #1d1d1d;
+
+    backdrop-filter: blur(12px);
+}
+
+.logo img {
+    width: 45px;
+
+    height: 45px;
+
+    object-fit: contain;
+
+}
+
+.navbar nav {
+    display: flex;
+
+    gap: 35px;
+}
+
+.navbar nav a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffffff;
+}
+
+
+/* ==================================
+   HERO
+================================== */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #202020 0%,
+            #0c0c0c 40%,
+            #050505 75%
+        );
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(0, 0, 0, 0.7)
+        );
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.hero-logo {
+    width: 220px;
+
+    max-width: 70vw;
+
+    margin-bottom: 35px;
+
+    filter:
+        drop-shadow(
+            0 0 30px rgba(255, 255, 255, 0.15)
+        );
+}
+
+.hero-subtitle {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 7px;
+
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    padding: 14px 40px;
+
+    border: 1px solid #555;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #ffffff;
+
+    color: #000000;
+}
+
+
+/* ==================================
+   MUSIC SECTION
+================================== */
+
+.music-section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 130px 30px;
+}
+
+.section-header {
+    margin-bottom: 60px;
+
+    border-bottom: 1px solid #222;
+
+    padding-bottom: 30px;
+}
+
+.section-label {
+    color: #666;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 12px;
+}
+
+.section-header h2,
+.about-section h2,
+.contact-section h2 {
+    font-size: clamp(45px, 7vw, 80px);
+
+    line-height: 0.95;
+
+    text-transform: uppercase;
+
+    letter-spacing: -3px;
+}
+
+
+/* ==================================
+   TRACKS
+================================== */
+
+.track {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 30px;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.track-number {
+    color: #444;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.track-info h3 {
+    font-size: 30px;
+
+    margin-bottom: 3px;
+}
+
+.track-info > p {
+    color: #666;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.track audio {
+    width: 100%;
+
+    max-width: 750px;
+
+    height: 40px;
+}
+
+
+/* ==================================
+   ABOUT
+================================== */
+
+.about-section {
+    padding: 150px 30px;
+
+    text-align: center;
+
+    background: #0b0b0b;
+
+    border-top: 1px solid #1b1b1b;
+
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.about-logo {
+    width: 80px;
+
+    margin-bottom: 35px;
+}
+
+.about-section h2 {
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #888;
+
+    font-size: 17px;
+}
+
+
+/* ==================================
+   CONTACT / SOCIALS
+================================== */
+
+.contact-section {
+    padding: 150px 30px;
+
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 50px;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.social-links a {
+    padding: 14px 25px;
+
+    border: 1px solid #2c2c2c;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #ffffff;
+
+    color: #000000;
+}
+
+
+/* ==================================
+   FOOTER
+================================== */
+
+footer {
+    padding: 40px 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid #1c1c1c;
+
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.footer-logo {
+    width: 35px;
+
+    height: 35px;
+
+    object-fit: contain;
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: 70px;
+
+        padding: 12px 20px;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+    .hero-logo {
+        width: 170px;
+    }
+
+    .track {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .track-number {
+        font-size: 13px;
+    }
+
+    .track-info h3 {
+        font-size: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+}
+/* =========================
+   SHEET MUSIC
+   ========================= */
+
+.sheet-music-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 130px 30px;
+}
+
+.sheet-music-content {
+    margin-top: 50px;
+}
+
+.sheet-music-info {
+    margin-bottom: 40px;
+}
+
+.sheet-music-info h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.sheet-music-info > p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 35px;
+}
+
+.sheet-music-audio {
+    width: 100%;
+    max-width: 750px;
+}
+
+.audio-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.sheet-music-audio audio {
+    width: 100%;
+    height: 40px;
+}
+
+/* PDF Viewer */
+
+.pdf-container {
+    width: 100%;
+    height: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    background: #111;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* PDF Button */
+
+.pdf-button-container {
+    margin-top: 25px;
+}
+
+.pdf-button {
+    display: inline-block;
+    padding: 14px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: inherit;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.pdf-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .sheet-music-section {
+        padding: 90px 20px;
+    }
+
+    .sheet-music-info h3 {
+        font-size: 24px;
+    }
+
+    .pdf-container {
+        height: 600px;
+    }
+
+}
+/* Sheet Music Video */
+
+.sheet-music-video {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 45px;
+}
+
+.sheet-music-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* ==================================
+ALBUM GALLERY
+================================== */
+
+.gallery-section {
+max-width: 1200px;
+margin: auto;
+padding: 160px 30px 130px;
+}
+
+.gallery-section .section-header {
+margin-bottom: 70px;
+}
+
+.gallery-section .section-header h1 {
+font-size: clamp(45px, 7vw, 80px);
+line-height: 0.95;
+text-transform: uppercase;
+letter-spacing: -3px;
+}
+
+/* ==============================
+ALBUM GRID
+============================== */
+
+.album-gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+/* ==============================
+ALBUM CARD
+============================== */
+
+.album-card {
+min-width: 0;
+}
+
+/* ==============================
+ALBUM IMAGE
+============================== */
+
+.album-image {
+position: relative;
+width: 100%;
+aspect-ratio: 1 / 1;
+
+```
+overflow: hidden;
+
+background: #0b0b0b;
+border: 1px solid #222;
+
+transition: 0.4s ease;
+```
+
+}
+
+.album-image img {
+display: block;
+
+```
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+
+transition: 0.5s ease;
+```
+
+}
+
+/* Hover effect */
+
+.album-card:hover .album-image {
+border-color: #555;
+}
+
+.album-card:hover .album-image img {
+transform: scale(1.04);
+}
+
+/* ==============================
+ALBUM INFORMATION
+============================== */
+
+.album-info {
+display: grid;
+grid-template-columns: 45px 1fr;
+
+gap: 15px;
+
+padding: 20px 0;
+
+border-bottom: 1px solid #1c1c1c;
+
+}
+
+.album-number {
+color: #444;
+
+font-size: 13px;
+font-weight: bold;
+
+letter-spacing: 1px;
+
+}
+
+.album-info h2 {
+margin-bottom: 5px;
+
+font-size: 22px;
+font-weight: 500;
+
+text-transform: uppercase;
+letter-spacing: 1px;
+
+}
+
+.album-info p {
+color: #666;
+
+font-size: 10px;
+letter-spacing: 2px;
+
+text-transform: uppercase;
+
+}
+
+/* ==============================
+MOBILE
+============================== */
+
+@media (max-width: 800px) {
+
+.gallery-section {
+    padding: 120px 20px 90px;
+}
+
+.album-gallery {
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.album-info h2 {
+    font-size: 24px;
+}
+
+}
+/* ==================================
+SECRET ALBUM
+================================== */
+
+.secret-album {
+display: block;
+
+width: 100%;
+
+padding: 0;
+
+border: none;
+
+background: none;
+
+color: inherit;
+
+font: inherit;
+
+text-align: left;
+
+cursor: pointer;
+
+}
+
+/* Keep the normal album hover effect */
+
+.secret-album:hover .album-image {
+border-color: #555;
+}
+
+.secret-album:hover .album-image img {
+transform: scale(1.04);
+}
+
+/* ==============================
+SECRET MESSAGE
+============================== */
+
+.secret-message {
+max-height: 0;
+
+overflow: hidden;
+
+opacity: 0;
+
+margin-top: 0;
+
+padding: 0;
+
+border: 1px solid transparent;
+
+text-align: center;
+
+transition:
+    max-height 0.6s ease,
+    opacity 0.6s ease,
+    margin-top 0.6s ease,
+    padding 0.6s ease;
+
+}
+
+/* Revealed state */
+
+.secret-message.show {
+max-height: 300px;
+
+opacity: 1;
+
+margin-top: 25px;
+
+padding: 30px 20px;
+
+border-color: #2c2c2c;
+
+}
+
+.secret-message p {
+color: #888;
+
+font-size: 12px;
+
+letter-spacing: 4px;
+
+line-height: 2;
+
+text-transform: uppercase;
+
+}
