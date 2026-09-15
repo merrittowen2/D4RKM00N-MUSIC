@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>D4RK M00N | Album Gallery</title>
+
+<!-- Same stylesheet as the rest of the website -->
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+```
+
+</head>
+
+<body>
+
+<!-- CLEAN LOADER -->
+<div id="site-loader">
+    <div class="loader-content">
+
+        <img src="images/logo.png" alt="D4RK M00N" class="loader-logo">
+
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+
+        <div class="loader-text">
+            D4RK M00N
+        </div>
+
+    </div>
+</div>
+
+<!-- ==============================
+     NAVIGATION
+=============================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="D4RK M00N Logo">
+    </a>
+
+    <nav>
+
+    <div class="page-nav">
+    <div class="page-menu" id="pageMenu">
+
+        <button class="page-menu-button" id="pageMenuButton" type="button">
+            <span class="menu-moon">☾</span>
+
+            <span class="menu-text">
+                <span class="menu-small">NAVIGATION</span>
+                <span class="menu-current">SELECT PAGE</span>
+            </span>
+
+            <span class="menu-arrow">↘</span>
+        </button>
+
+        <div class="page-menu-dropdown" id="pageMenuDropdown">
+
+            <div class="menu-header">
+                
+                <span>SELECT</span>
+            </div>
+
+            <a href="index.html">
+                <span class="page-number">01</span>
+                <span class="page-name">HOME</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <a href="gallery.html">
+                <span class="page-number">02</span>
+                <span class="page-name">GALLERY</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <a href="music.html">
+                <span class="page-number">03</span>
+                <span class="page-name">SOUNDCLOUD</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <a href="index.html#sheet-music">
+                <span class="page-number">04</span>
+                <span class="page-name">SHEET MUSIC</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <a href="index.html#about">
+                <span class="page-number">05</span>
+                <span class="page-name">ABOUT</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <a href="index.html#contact">
+                <span class="page-number">06</span>
+                <span class="page-name">CONTACT</span>
+                <span class="page-symbol">↗</span>
+            </a>
+
+            <div class="menu-footer">
+                <span>◉ ONLINE</span>
+                <span>D4RK M00N</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+</nav>
+
+</header>
+
+
+<!-- ==============================
+     GALLERY HERO
+=============================== -->
+
+<main>
+
+    <section class="gallery-section">
+
+        <div class="section-header">
+
+            <p class="section-label">
+                THE ART
+            </p>
+
+            <h1>
+                Album Gallery
+            </h1>
+
+        </div>
+
+
+        <!-- ==============================
+             ALBUM COVERS
+        =============================== -->
+
+        <div class="album-gallery">
+
+            <!-- ALBUM 01 -->
+
+            <article class="album-card">
+
+                <div class="album-image">
+                    <img
+                        src="images/album1.png"
+                        alt="Album 1 cover"
+                    >
+                </div>
+
+                <div class="album-info">
+
+                    <span class="album-number">
+                        01
+                    </span>
+
+                    <div>
+                        <h2>
+                            This Time Is Different
+                        </h2>
+
+                        <p>
+                            2026 • indie • D4RK M00N
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ALBUM 02 -->
+
+            <article class="album-card">
+
+                <div class="album-image">
+                    <img
+                        src="images/album2.png"
+                        alt="Album 2 cover"
+                    >
+                </div>
+
+                <div class="album-info">
+
+                    <span class="album-number">
+                        02
+                    </span>
+
+                    <div>
+                        <h2>
+                            Familiarity
+                        </h2>
+
+                        <p>
+                            2026 • instrumental • D4RK M00N
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+<!-- ALBUM 03 - SECRET -->
+
+<article class="album-card">
+
+<button class="secret-album" onclick="revealSecret()" aria-label="Reveal secret">
+
+    <div class="album-image secret-image">
+
+        <img
+            src="images/album3.png"
+            alt="Album 3 cover"
+        >
+
+        <!-- Secret overlay -->
+        <div id="secret-overlay" class="secret-overlay">
+
+            <div class="secret-content">
+                <span>YOU FOUND IT</span>
+                <p>Aopz Aptl Pz Kpmmlylua(Jvtwslal Lkpapvu)</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="album-info">
+
+        <span class="album-number">
+            03
+        </span>
+
+        <div>
+            <h2>
+                ????????
+            </h2>
+
+            <p>
+                2026 • D4RK M00N
+            </p>
+        </div>
+
+    </div>
+
+</button>
+
+</article>
+
+</main>
+
+
+<!-- ==============================
+     FOOTER
+=============================== -->
+
+<footer>
+
+    <img
+        src="images/logo.png"
+        alt="D4RK M00N"
+        class="footer-logo"
+    >
+
+    <p>
+        © 2026 D4RK M00N
+    </p>
+
+</footer>
+<script>
+    function revealSecret() {
+
+        const album = document.querySelector(".secret-album");
+
+        if (album.classList.contains("revealed")) {
+
+            album.classList.remove("revealed");
+
+        } else {
+
+            album.classList.add("glitching");
+
+            setTimeout(function () {
+                album.classList.remove("glitching");
+                album.classList.add("revealed");
+            }, 450);
+
+        }
+    }
+</script>
+<script>
+
+window.addEventListener("load", function () {
+
+    const loadingScreen =
+        document.getElementById("loading-screen");
+
+    setTimeout(function () {
+
+        loadingScreen.classList.add("loaded");
+
+    }, 500);
+
+});
+
+</script>
+<script>
+const pageMenu = document.getElementById("pageMenu");
+const pageMenuButton = document.getElementById("pageMenuButton");
+
+pageMenuButton.addEventListener("click", function () {
+    const isOpen = pageMenu.classList.toggle("open");
+
+    pageMenuButton.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+    );
+});
+
+/* Close when clicking outside */
+
+document.addEventListener("click", function (event) {
+
+    if (!pageMenu.contains(event.target)) {
+        pageMenu.classList.remove("open");
+
+        pageMenuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+    }
+
+});
+
+/* Close with Escape */
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+        pageMenu.classList.remove("open");
+
+        pageMenuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+    }
+
+});
+</script>
+<script>
+window.addEventListener("load", function () {
+
+    const loader = document.getElementById("site-loader");
+
+    setTimeout(function () {
+        loader.classList.add("loaded");
+    }, 400);
+
+});
+</script>
+</body>
+</html>
